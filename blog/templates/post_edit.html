@@ -4,6 +4,7 @@
 <h1>Edit post</h1>
 <form action="" method="post">{% csrf_token %}
   {{ form.as_p }}
-<input type="submit" value="Update">
+  <input type="submit"  class="btn btn-secondary" value="Update">
+  <button type="button" class="btn btn-secondary" onclick="location.href='{% url 'home' %}'">Cancel</button>
 </form>
 {% endblock content %}

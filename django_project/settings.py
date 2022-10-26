@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "blog.apps.BlogConfig",  # new
-    "accounts.apps.AccountsConfig", # new
+    "accounts.apps.AccountsConfig",  # new
 ]
 
 MIDDLEWARE = [
@@ -127,5 +127,3 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 LOGIN_REDIRECT_URL = "home"  # new
 LOGOUT_REDIRECT_URL = "home"  # new
-
-

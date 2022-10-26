@@ -4,6 +4,7 @@
 <h2>Log In</h2>
 <form method="post">{% csrf_token %}
   {{ form.as_p }}
-  <button type="submit">Log In</button>
+  <button type="submit" class="btn btn-secondary">Log In</button>
+  <button type="button" class="btn btn-secondary" onclick="location.href='{% url 'home' %}'">Cancel</button>
 </form>
 {% endblock content %}
